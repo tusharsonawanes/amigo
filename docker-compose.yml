@@ -23,8 +23,8 @@ services:
     container_name: mongo
     image: mongo
     restart: ${RESTART} 
-    volumes:
-      - ./mongodb/data:/data/db
+    #volumes:                       If MongoDB data is to be persisted
+    #  - ./mongodb/data:/data/db
     #ports:                         Expose theeports only when absolutely necessary
     #  - 27010:27010
     environment:
